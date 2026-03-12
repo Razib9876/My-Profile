@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@tailwind utilities;
+
+/* Ensure smooth scrolling when clicking navigation links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar for a premium look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--b2));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--p));
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--pf));
+}
+
+/* Ensure the body doesn't overflow horizontally due to motion animations */
+body {
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif; /* Recommended font */
+}
+
+/* Typography polish for sections */
+section {
+  @apply transition-colors duration-300;
+}
