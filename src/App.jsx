@@ -4,7 +4,7 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import Projects from "./sections/Projects";
 import About from "./sections/About";
 import Experience from "./sections/Experience";
-import Sidebar from "./components/sidebar";
+import Sidebar from "./components/Sidebars";
 // Import other sections similarly...
 
 function App() {
