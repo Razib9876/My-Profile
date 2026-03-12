@@ -1,16 +1,16 @@
 import Hero from "./sections/Hero";
 import Contact from "./sections/Contact";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
-import Sidebar from "./components/sidebar";
 import Projects from "./sections/Projects";
 import About from "./sections/About";
 import Experience from "./sections/Experience";
+import Sidebar from "./components/sidebar";
 // Import other sections similarly...
 
 function App() {
   return (
     <div className="bg-base-100 min-h-screen">
-      <Sidebar />
+      <Sidebar></Sidebar>
       <main className="lg:ml-64 transition-all duration-300">
         <Hero />
 
