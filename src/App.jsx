@@ -1,10 +1,10 @@
 import Hero from "./sections/Hero";
 import Contact from "./sections/Contact";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import Sidebar from "./components/Sidebars";
 import Projects from "./sections/Projects";
 import About from "./sections/About";
 import Experience from "./sections/Experience";
-import Sidebar from "./components/Sidebars";
 // Import other sections similarly...
 
 function App() {
