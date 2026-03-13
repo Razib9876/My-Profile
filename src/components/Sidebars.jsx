@@ -26,7 +26,7 @@ const SidebarContent = ({ activeSection, closeDrawer, menuItems }) => (
       >
         <div className="w-28 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 shadow-xl">
           <img
-            src="src/assets/profileImageBlackAndWhite.jpeg"
+            src="https://i.ibb.co.com/B5HSDQTc/profile-Image-Black-And-White.jpg"
             alt="Mohammad Razib"
           />
         </div>
