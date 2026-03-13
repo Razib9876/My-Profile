@@ -3,7 +3,7 @@ const projects = [
     title: "Safar",
     description:
       "A full-stack MERN platform with Stripe integration and real-time inventory.",
-    img: "src/assets/projects/safar.png",
+    img: "https://i.ibb.co.com/tP8436FT/safar.png",
     tags: ["React", "TypeScript", "Node.js", "MongoDB"],
     link: "https://safarapps.netlify.app",
     github: "https://github.com/Razib9876/Safar-App.git",
@@ -12,7 +12,7 @@ const projects = [
     title: "Electro",
     description:
       "A developer networking site featuring real-time chat and project sharing.",
-    img: "src/assets/projects/electro.png",
+    img: "https://i.ibb.co.com/gZ7ysfCS/electro.png",
     tags: ["React", "Firebase", "Tailwind"],
     link: "https://electpro1.netlify.app/",
     github: "github.com/Razib9876/electpro.git",
