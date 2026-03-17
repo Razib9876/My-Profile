@@ -4,56 +4,56 @@ const skills = [
     name: "Vanilla JavaScript",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     description:
-      "Strong understanding of core JavaScript concepts including functions, loops, arrays, objects, and DOM manipulation.",
+      "Strong understanding of JavaScript concepts like functions, loops, arrays, objects, and DOM work.",
   },
   {
     id: 2,
     name: "React.js",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     description:
-      "Building dynamic user interfaces using components, hooks, and state management for modern web applications.",
+      "Build dynamic user interfaces using components, hooks, and state management in modern apps.",
   },
   {
     id: 3,
     name: "Node.js",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
     description:
-      "Developing backend services and REST APIs using Node.js with Express for scalable web applications.",
+      "Develop backend services and REST APIs using Node.js and Express for scalable applications.",
   },
   {
     id: 4,
     name: "Next.js",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
     description:
-      "Creating fast and SEO-friendly web applications using server-side rendering and modern Next.js features.",
+      "Create fast SEO-friendly apps using server-side rendering and modern Next.js features.",
   },
   {
     id: 5,
     name: "npm",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
     description:
-      "Managing project dependencies and scripts efficiently using the Node Package Manager ecosystem.",
+      "Manage dependencies|scripts efficiently using the Node Package Manager ecosystem tools.",
   },
   {
     id: 6,
     name: "TypeScript",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
     description:
-      "Writing safer and scalable JavaScript using static typing and modern TypeScript development practices.",
+      "Write safer scalable JavaScript with static typing and modern TypeScript practices and tools.",
   },
   {
     id: 7,
     name: "MongoDB",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
     description:
-      "Designing NoSQL databases and handling application data efficiently using MongoDB.",
+      "Design NoSQL databases|manage application data efficiently using MongoDB systems.",
   },
   {
     id: 8,
     name: "Tailwind CSS",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
     description:
-      "Creating responsive and modern UI designs rapidly using utility-first Tailwind CSS framework.",
+      "Create responsive modern UI designs quickly using utility-first Tailwind CSS framework.",
   },
 ];
 
