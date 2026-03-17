@@ -334,7 +334,7 @@ const SidebarContent = ({ activeSection, closeDrawer, menuItems }) => (
       </ul>
     </nav>
 
-    <div className="px-4 mb-10 border-t border-base-300 flex items-center justify-between bg-base-300/40 backdrop-blur-sm rounded-t-lg shadow-inner">
+    <div className="px-4 mb-40 sm:mb-10 border-t border-base-300 flex items-center justify-between bg-base-300/40 backdrop-blur-sm rounded-t-lg shadow-inner">
       <span className="text-xs font-semibold uppercase tracking-wider text-base-content/70">
         Theme
       </span>
