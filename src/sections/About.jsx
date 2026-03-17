@@ -103,126 +103,98 @@
 // };
 
 // export default About;
-
+import React from "react";
 import { motion } from "framer-motion";
-import { FaDownload } from "react-icons/fa";
 
 const About = () => {
-  const birthYear = 1999;
-  const age = new Date().getFullYear() - birthYear;
-
   return (
-    // <section id="about" className="bg-base-100 py-20 overflow-hidden mt-96">
     <section
       id="about"
-      className="bg-base-100 py-20 overflow-hidden mt-96 sm:mt-20"
+      className="bg-base-100 h-screen py-24 flex items-center transition-colors duration-300"
     >
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Section Title */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold">
-            <span className="text-base-content">Know Me </span>
-            <span className="text-primary">More</span>
+      <div className="max-w-5xl mx-auto px-6 w-full">
+        {/* Simple Header - Logo Style */}
+        <div className="mb-10 border-l-8 border-base-content pl-6">
+          <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-base-content">
+            About <br />
+            <span className="opacity-30">Me.</span>
           </h2>
-
-          {/* Styled Industrial Underline */}
-          <div className="flex items-center justify-center gap-2 mt-4">
-            <div className="w-1.5 h-1.5 bg-primary rotate-45"></div>
-            <div className="w-16 h-[2px] bg-primary rounded-full"></div>
-            <div className="w-1.5 h-1.5 bg-primary rotate-45"></div>
-          </div>
         </div>
 
-        {/* Content Grid */}
-        <div className="grid md:grid-cols-3 gap-12 items-start">
-          {/* Left Text Content */}
+        {/* Main Content Grid */}
+        <div className="grid md:grid-cols-12 gap-12">
+          {/* Text Content */}
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            className="md:col-span-2 space-y-6"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="md:col-span-8 space-y-8"
           >
-            <h3 className="text-3xl font-bold leading-tight">
-              I'm <span className="text-primary">Mohammad Razib</span>, a
-              Professional Web Developer
+            <h3 className="text-2xl md:text-3xl font-bold text-base-content">
+              I'm Mohammad Razib
             </h3>
-            <p className="text-base-content/70 text-lg leading-relaxed">
-              I build modern and scalable web applications using technologies
-              like React, Next.js, Node.js, and MongoDB. My goal is to create
-              fast, responsive, and user-friendly digital experiences.
-            </p>
-            <p className="text-base-content/70 text-lg leading-relaxed">
-              I enjoy solving real-world problems with clean and efficient code.
-              I focus on performance, scalability, and maintainable architecture
-              while delivering projects that meet client and business needs.
-            </p>
+
+            <div className="space-y-6 text-lg text-base-content/70 leading-relaxed font-medium">
+              <p>
+                I studied Management, but later discovered my passion for web
+                development and started learning it.
+              </p>
+
+              <p className="text-base-content">
+                I enjoy solving real-world problems. I built a local solution
+                with a bidding system, which challenged me to work with data
+                structures, backend logic, and TypeScript as a fresher.
+              </p>
+
+              <p>
+                Recently, I'm working with local business owners about building
+                modern, maintainable custom-coded e-commerce websites and
+                improving their branding.
+              </p>
+
+              <p className="text-base-content font-bold underline decoration-1 underline-offset-8">
+                Currently, I am exploring AI, web design, and no-code tools to
+                expand my skills.
+              </p>
+            </div>
           </motion.div>
 
-          {/* Right Info List */}
+          {/* Highlights Sidebar */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            className="space-y-4 bg-base-200 p-8 rounded-2xl shadow-sm"
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="md:col-span-4"
           >
-            {[
-              { label: "Name", value: "Mohammad Razib" },
-              {
-                label: "Email",
-                value: "mohammadrazib987@gmail.com",
-                color: "text-primary",
-              },
-              { label: "Age", value: age },
-              { label: "From", value: "Bangladesh" },
-            ].map((item, idx) => (
-              <div
-                key={idx}
-                className="border-b border-base-300 pb-3 last:border-0"
-              >
-                <span className="font-bold text-base-content/50 text-sm uppercase mr-2">
-                  {item.label}:
-                </span>
-                <span
-                  className={`font-medium ${item.color || "text-base-content"}`}
-                >
-                  {item.value}
-                </span>
-              </div>
-            ))}
-
-            <div className="pt-4">
-              <a
-                href="/Mohammad_Razib_Resume.pdf" // Ensure path is correct for public folder
-                download
-                className="btn btn-primary btn-block gap-2 normal-case shadow-lg"
-              >
-                <FaDownload size={14} /> Download CV
-              </a>
-            </div>
-          </motion.div>
-        </div>
-
-        {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-24">
-          {[
-            { label: "Years Experience", value: "2+" },
-            { label: "Happy Clients", value: "20+" },
-            { label: "Projects Done", value: "30+" },
-            { label: "Awards", value: "5" },
-          ].map((stat, idx) => (
-            <motion.div
-              key={idx}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: idx * 0.1 }}
-              className="text-center"
-            >
-              <h4 className="text-5xl font-extrabold text-base-content/20 mb-2">
-                {stat.value}
+            <div className="bg-base-content text-base-100 p-8 rounded-none border border-base-content">
+              <h4 className="text-xs uppercase tracking-[0.3em] mb-6 opacity-70">
+                Core Focus
               </h4>
-              <p className="text-base-content/60 font-medium">{stat.label}</p>
-            </motion.div>
-          ))}
+              <ul className="space-y-4 font-bold text-sm">
+                <li className="flex items-center gap-3">
+                  <span className="w-2 h-2 bg-base-100 rotate-45"></span>
+                  Real-world problem solving
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="w-2 h-2 bg-base-100 rotate-45"></span>
+                  Backend & API development
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="w-2 h-2 bg-base-100 rotate-45"></span>
+                  Scalable architecture focus
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="w-2 h-2 bg-base-100 rotate-45"></span>
+                  Creative & design interest
+                </li>
+              </ul>
+            </div>
+
+            {/* Subtle Button */}
+            <button className="mt-8 w-full py-4 border border-base-content hover:bg-base-content hover:text-base-100 transition-all text-xs uppercase tracking-widest font-black">
+              Download CV
+            </button>
+          </motion.div>
         </div>
       </div>
     </section>

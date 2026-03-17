@@ -32,7 +32,7 @@ const TechStackVideoEffect = () => {
     // Duration set to 4 seconds (4000ms) for maximum readability
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % words.length);
-    }, 1500);
+    }, 900);
 
     return () => clearInterval(interval);
   }, [words.length]);
