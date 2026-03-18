@@ -110,7 +110,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="bg-base-100 h-screen py-24 flex items-center transition-colors duration-300"
+      className="bg-base-100 min-h-screen py-24 flex items-center transition-colors duration-300"
     >
       <div className="max-w-5xl mx-auto px-6 w-full">
         {/* Simple Header - Logo Style */}
