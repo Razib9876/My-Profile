@@ -1,3 +1,5 @@
+import { BsYoutube } from "react-icons/bs";
+
 const projects = [
   {
     title: "Safar",
@@ -7,6 +9,7 @@ const projects = [
     tags: ["React", "TypeScript", "Node.js", "MongoDB"],
     link: "https://safarapps.netlify.app",
     github: "https://github.com/Razib9876/Safar-App.git",
+    BsYoutube: "https://youtu.be/6c_Ic66Rj4Q?si=fSyEiJ2-EqAcjMJX",
   },
   {
     title: "Electro",

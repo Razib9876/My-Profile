@@ -303,7 +303,7 @@ const SidebarContent = ({ activeSection, closeDrawer, menuItems }) => (
 
     <div className="px-6 mb-4">
       <a
-        href="src/assets/Mohammad_Razib_FlowCV_Resume_2026-03-12.pdf"
+        href="/Mohammad_Razib_FlowCV_Resume_2026-03-12.pdf"
         download
         className="btn btn-outline w-full gap-2 normal-case btn-sm text-base-content hover:bg-base-200"
       >
@@ -390,7 +390,7 @@ const Sidebar = () => {
       {/* Mobile Sticky Navbar */}
       <div className="lg:hidden fixed top-0 left-0 right-0 z-50 w-screen backdrop-blur-sm bg-base-100/70 flex justify-between items-center px-6 py-3">
         {/* Left: Logo */}
-        <div className="text-xl font-bold tracking-widest">M. RAZIB</div>
+        <div className="text-xl font-bold tracking-widest">Razib's Profile</div>
 
         {/* Right: Drawer Button */}
         <div>

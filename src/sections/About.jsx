@@ -105,6 +105,7 @@
 // export default About;
 import React from "react";
 import { motion } from "framer-motion";
+import { FaDownload } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -191,9 +192,15 @@ const About = () => {
             </div>
 
             {/* Subtle Button */}
-            <button className="mt-8 w-full py-4 border border-base-content hover:bg-base-content hover:text-base-100 transition-all text-xs uppercase tracking-widest font-black">
-              Download CV
-            </button>
+            <div className="mb-4 mt-6 w-full">
+              <a
+                href="/Mohammad_Razib_FlowCV_Resume_2026-03-12.pdf"
+                download
+                className="group w-full py-3 border border-base-content text-base-content hover:bg-base-content hover:text-base-100 transition-all flex items-center justify-center gap-3 text-xs uppercase tracking-widest font-black disabled:opacity-50"
+              >
+                <FaDownload size={12} /> Download CV
+              </a>
+            </div>
           </motion.div>
         </div>
       </div>

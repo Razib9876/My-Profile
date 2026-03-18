@@ -80,16 +80,16 @@
 // export default Projects;
 import React from "react";
 import { motion } from "framer-motion";
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub, FaYoutube } from "react-icons/fa";
 import projects from "../assets/projects";
 
 const Projects = () => {
   return (
     <section
       id="projects"
-      className="bg-base-200 min-h-screen py-10 flex items-center transition-colors duration-300"
+      className="bg-base-200 min-h-screen py-10 flex items-center transition-colors duration-300 rounded-0"
     >
-      <div className="max-w-6xl mx-auto px-6 w-full">
+      <div className="max-w-6xl mx-auto px-6 w-full ">
         {/* Header - Same Style as About */}
         <div className="mb-12 border-l-8 border-base-content pl-6">
           <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-base-content">
@@ -99,7 +99,7 @@ const Projects = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8  pr-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8  pr-2 rounded-0">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -108,7 +108,7 @@ const Projects = () => {
               whileHover={{ y: -10 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="card bg-base-100 shadow-xl overflow-hidden border border-base-300"
+              className="card bg-base-100 shadow-xl overflow-hidden border border-base-300 rounded-0"
             >
               <figure>
                 <img
@@ -119,7 +119,9 @@ const Projects = () => {
               </figure>
 
               <div className="card-body">
-                <h3 className="card-title text-primary">{project.title}</h3>
+                <div className="text-base-content">
+                  <h3 className="card-title ">{project.title}</h3>
+                </div>
 
                 <p className="text-sm text-base-content/70">
                   {project.description}
@@ -150,6 +152,14 @@ const Projects = () => {
                     rel="noopener noreferrer"
                   >
                     <FaExternalLinkAlt /> Live Demo
+                  </a>
+                  <a
+                    href={project.BsYoutube}
+                    className="flex items-center gap-1 text-sm hover:text-primary transition"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaYoutube /> Youtube
                   </a>
                 </div>
               </div>
